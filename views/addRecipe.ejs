@@ -11,7 +11,7 @@
                     <a href="/logout" class="col-3 btn btn-primary">Logout</a>
                 </div>
                 <div class="mt-5">
-                    <h2>Add a Recipe <%= restaurant.id %></h2>
+                    <h2>Add a Recipe </h2>
                     
                     <form action="/menu/createRecipe/<%= restaurant.id %>" enctype="multipart/form-data" method="POST">
                         <div class="mb-3">
@@ -31,7 +31,7 @@
                             <textarea class="form-control" id="ingredients" name="ingredients"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="directions" class="form-label">Derections</label>
+                            <label for="directions" class="form-label">Directions</label>
                             <textarea class="form-control" id="directions" name="directions"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" value="Upload">Submit</button>

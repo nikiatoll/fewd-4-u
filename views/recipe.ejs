@@ -20,19 +20,20 @@
                 </div>
             </div>
             <div class="col-3 mt-5">
+                <h4>Description</h4>
                 <p>
                     <%= recipe.description %>
                 </p>
+                <h4>Ingredients</h4>
                 <p>
                     <%= recipe.ingredients %>
                 </p>
+                <h4>Directions</h4>
                 <p>
                     <%= recipe.directions %>
                 </p>
             </div>
             <div class="col-6 mt-5">
-                <a class="btn btn-primary" href="/createRestaurant">Create a new Restaurant</a>
-                <a class="btn btn-primary" href="/createRecipe/<%= restaurant._id%>">Create a new Recipe</a>
                 <a class="btn btn-primary" href="/menu/<%= recipe.restaurant%>">Back to Restaurant</a>
                 <a class="btn btn-primary" href="/restaurantList">Return to the Restaurant List</a>
             </div>
